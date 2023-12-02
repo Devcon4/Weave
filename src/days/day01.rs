@@ -81,7 +81,7 @@ mod tests {
         assert_eq!(part2("4nineeightseven2"), 42);
         assert_eq!(part2("zoneight234"), 14);
         assert_eq!(part2("7pqrstsixteen"), 76);
-        assert_eq!(part2("eighthree"), 83);
+        assert_eq!(part2("eighthree"), 88);
 
         assert_eq!(part2(INPUT_TEST2), 281);
     }
