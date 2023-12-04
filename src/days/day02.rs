@@ -63,12 +63,6 @@ fn parse_game(input: &str) -> Game {
 }
 
 fn game_possible(match_set: &Set, game: &Game) -> bool {
-    let mut sum = Set {
-        red: 0,
-        green: 0,
-        blue: 0,
-    };
-
     for set in &game.vec {
         if set.red > match_set.red || set.green > match_set.green || set.blue > match_set.blue {
             return false;
@@ -96,7 +90,7 @@ fn game_minimum_set(game: &Game) -> Set {
 }
 
 fn part1(input: &str) -> i32 {
-    let totalSet = Set {
+    let total_set = Set {
         red: 12,
         green: 13,
         blue: 14,
@@ -107,7 +101,7 @@ fn part1(input: &str) -> i32 {
     let mut sum = 0;
     for game in games {
         let game = parse_game(game);
-        if game_possible(&totalSet, &game) {
+        if game_possible(&total_set, &game) {
             sum += game.id;
         }
     }
