@@ -1,6 +1,6 @@
 pub fn runner() {
-    println!("Day 01 Part 1: {}", part1(INPUT1));
-    println!("Day 01 Part 2: {}", part2(INPUT1));
+    println!("Day 01 Part 1:\t{}", part1(INPUT1));
+    println!("Day 01 Part 2:\t{}", part2(INPUT1));
 }
 
 fn part1(input: &str) -> u32 {
@@ -85,21 +85,20 @@ mod tests {
 
         assert_eq!(part2(INPUT_TEST2), 281);
     }
-}
 
-// data
-const INPUT_TEST1: &str = "1abc2
+    const INPUT_TEST1: &str = "1abc2
 pqr3stu8vwx
 a1b2c3d4e5f
 treb7uchet";
 
-const INPUT_TEST2: &str = "two1nine
+    const INPUT_TEST2: &str = "two1nine
 eightwothree
 abcone2threexyz
 xtwone3four
 4nineeightseven2
 zoneight234
 7pqrstsixteen";
+}
 
 const INPUT1: &str = "ninefourone1
 53sevenvvqm

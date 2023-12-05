@@ -1,6 +1,6 @@
 pub fn runner() {
-    println!("Day 02 Part 1: {}", part1(INPUT1));
-    println!("Day 02 Part 2: {}", part2(INPUT1));
+    println!("Day 02 Part 1:\t{}", part1(INPUT1));
+    println!("Day 02 Part 2:\t{}", part2(INPUT1));
 }
 
 #[derive(Debug)]
@@ -135,13 +135,13 @@ mod tests {
     fn test_part2() {
         assert_eq!(part2(INPUT_TEST1), 2286);
     }
-}
 
-const INPUT_TEST1: &str = "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
+    const INPUT_TEST1: &str = "Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
 Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
 Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
 Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
 Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green";
+}
 
 const INPUT1: &str = "Game 1: 2 green, 12 blue; 6 red, 6 blue; 8 blue, 5 green, 5 red; 5 green, 13 blue; 3 green, 7 red, 10 blue; 13 blue, 8 red
 Game 2: 1 green, 7 red; 1 green, 9 red, 3 blue; 4 blue, 5 red
